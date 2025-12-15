@@ -1,0 +1,152 @@
+:root {
+  --bg-light: #f7efe5;
+  --text-pink: #c97c9f;
+  --accent-pink: #b65c87;
+  --dark-accent: #3a2c2f;
+  --white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: var(--bg-light);
+  color: var(--text-pink);
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  color: var(--accent-pink);
+}
+
+/* NAV */
+.navbar {
+  background-color: var(--dark-accent);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.logo {
+  color: var(--white);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 1.5rem;
+}
+
+.nav-links a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+/* HERO */
+.hero {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: 1rem 0;
+}
+
+/* BUTTON */
+.btn,
+.contact button {
+  background-color: var(--accent-pink);
+  color: var(--white);
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* SECTIONS */
+section {
+  padding: 3rem 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* SKILLS */
+.skills {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skills li {
+  background-color: var(--white);
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  border-radius: 4px;
+}
+
+/* PROJECTS */
+.project-card {
+  background-color: var(--white);
+  padding: 1.5rem;
+  margin-top: 1rem;
+  border-radius: 6px;
+}
+
+.project-card a {
+  color: var(--accent-pink);
+  font-weight: bold;
+}
+
+/* CONTACT */
+.contact form {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact label {
+  margin-bottom: 1rem;
+}
+
+.contact input,
+.contact textarea {
+  padding: 0.6rem;
+  margin-top: 0.3rem;
+  width: 100%;
+}
+
+/* FOOTER */
+footer {
+  background-color: var(--dark-accent);
+  color: var(--white);
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.social-links a {
+  color: var(--white);
+  margin: 0 0.5rem;
+  text-decoration: none;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+  }
+}
